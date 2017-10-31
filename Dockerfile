@@ -8,7 +8,7 @@ RUN apk add --update --no-cache \
     libcrypto1.0 libssl1.0 \
     ttf-dejavu ttf-droid ttf-freefont ttf-liberation ttf-ubuntu-font-family
 
-COPY wkhtmltopdf /bin
+COPY wkhtmltopdf /usr/bin
 
 WORKDIR /opt/app
 
