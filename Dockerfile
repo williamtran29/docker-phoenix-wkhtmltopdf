@@ -29,6 +29,9 @@ RUN apk update && \
     
 COPY wkhtmltopdf /usr/bin
 
+# try fix
+RUN ln -s /bin/sh /bin/source
+
 WORKDIR /opt/app
 
 CMD ["/bin/sh"]
