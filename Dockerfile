@@ -26,8 +26,6 @@ RUN apk add --update --no-cache \
     ttf-dejavu ttf-droid ttf-freefont ttf-liberation ttf-ubuntu-font-family \
     rm -rf /var/cache/apk/*
     
-RUN ln -s /bin/sh /bin/source
-
 COPY wkhtmltopdf /usr/bin
 
 WORKDIR /opt/app
